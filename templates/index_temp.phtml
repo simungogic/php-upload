@@ -1,0 +1,19 @@
+<html>
+ <head>  
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<?php echo Session::flash('loggedIn'); ?>
+<p>Pozdrav <a href="profile.php?user=<?php echo escape($user->data()->ime_prez);?>"><?php echo escape($user->data()->ime_prez); ?></a>!</p>
+<ul>
+    <li><a href="logout.php">Odlogiraj se</a></li>
+    <li><a href="update.php">Izmijeni podatke</a></li>
+    <li><a href="changepassword.php">Promjeni lozinku</a></li>
+</ul>
+</body>
+</html>
+
+
